@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>纸韵匠心 - 衍纸文创店铺</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"微软雅黑","PingFang SC";}
+body{background:#F4F4F4;}
+/* 顶部栏 */
+.taobao-top{width:100%;height:40px;background:#FFF;line-height:40px;border-bottom:1px solid #EEE;}
+.top-content{width:1200px;margin:0 auto;font-size:12px;color:#666;}
+/* 店招 */
+.taobao-banner{width:100%;height:120px;background:#FF4400;position:relative;}
+.shop-logo{position:absolute;left:30px;top:20px;width:80px;height:80px;border-radius:50%;overflow:hidden;background:#FFF;}
+.shop-name{position:absolute;left:130px;top:35px;color:#FFF;font-size:28px;font-weight:bold;}
+.shop-desc{position:absolute;left:130px;top:75px;color:#FFF;font-size:14px;}
+/* 导航 */
+.taobao-nav{width:100%;height:50px;background:#333;}
+.nav-ul{list-style:none;display:flex;line-height:50px;width:1200px;margin:0 auto;}
+.nav-ul li{margin:0 25px;}
+.nav-ul li a{color:#FFF;text-decoration:none;font-size:16px;}
+.nav-ul li a:hover{color:#FFD100;}
+
+/* ========== 轮播样式 ========== */
+.taobao-swiper{width:1200px;height:400px;margin:15px auto;background:#FFF;overflow:hidden;position:relative;}
+.swiper-wrap{width:100%;height:100%;display:flex;transition: transform 0.6s ease;}
+.swiper-item{width:100%;flex-shrink:0;}
+.swiper-item img{width:100%;height:100%;object-fit:cover;display:block;}
+/* 左右箭头 */
+.swiper-arrow{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;background:rgba(0,0,0,0.3);color:#fff;text-align:center;line-height:40px;font-size:20px;cursor:pointer;z-index:2;}
+.arrow-left{left:10px;}
+.arrow-right{right:10px;}
+.swiper-arrow:hover{background:rgba(0,0,0,0.6);}
+/* 小圆点 */
+.swiper-dots{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:2;}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;}
+.dot.active{background:#FF4400;}
+
+/* 商品容器 */
+.container{width:1200px;margin:0 auto;background:#FFF;padding:20px;box-shadow:0 0 5px #EEE;}
+.goods-title{height:50px;line-height:50px;font-size:22px;font-weight:bold;color:#333;border-bottom:2px solid #FF4400;margin-bottom:20px;}
+/* 商品卡片 */
+.goods-box{display:flex;flex-wrap:wrap;gap:20px;}
+.goods-card{width:272px;border:1px solid #EEE;border-radius:4px;overflow:hidden;transition:0.3s;}
+.goods-card:hover{box-shadow:0 0 10px #CCC;transform:translateY(-3px);}
+.goods-pic{width:100%;height:272px;}
+.goods-pic img{width:100%;height:100%;object-fit:cover;}
+.goods-info{padding:10px;}
+.goods-name{font-size:14px;color:#333;height:40px;line-height:20px;overflow:hidden;margin-bottom:8px;}
+.goods-price{font-size:20px;color:#FF4400;font-weight:bold;margin-bottom:10px;}
+.goods-btn{width:100%;height:36px;background:#FF4400;color:#FFF;border:none;border-radius:4px;cursor:pointer;font-size:14px;}
+.goods-btn:hover{background:#E53E00;}
+/* 底部 */
+.taobao-footer{width:100%;height:80px;background:#333;color:#FFF;text-align:center;line-height:80px;font-size:14px;margin-top:20px;}
+</style>
+</head>
+<body>
+<div class="taobao-top">
+    <div class="top-content">好物优选 · 纸韵匠心衍纸文创官方店</div>
+</div>
+<div class="taobao-banner">
+    <div class="shop-logo">
+        <img src="images/logo.jpg" width="80" height="80" alt="店铺logo">
+    </div>
+    <div class="shop-name">纸韵匠心文创店</div>
+    <div class="shop-desc">手工衍纸饰品 | 汉服配饰DIY材料包</div>
+</div>
+<div class="taobao-nav">
+    <ul class="nav-ul">
+    <li><a href="zhiyun_index.html">首页</a></li>
+    <li><a href="zhiyun_goods.html">全部商品</a></li>
+    <li><a href="zhiyun_cart.html">购物车</a></li>
+    <li><a href="zhiyun_order.html">我的订单</a></li>
+    <li><a href="zhiyun_address.html">收货地址</a></li>
+    <li><a href="zhiyun_coupon.html">优惠券</a></li>
+    <li><a href="zhiyun_service.html">联系客服</a></li>
+</ul>
+</div>
+
+<!-- 轮播区域 -->
+<div class="taobao-swiper">
+    <div class="swiper-wrap">
+        <div class="swiper-item"><img src="images/banner1.jpg" alt="衍纸文创"></div>
+        <div class="swiper-item"><img src="images/banner2.jpg" alt="衍纸文创"></div>
+        <div class="swiper-item"><img src="images/banner3.jpg" alt="衍纸文创"></div>
+        <div class="swiper-item"><img src="images/banner4.jpg" alt="衍纸文创"></div>
+    </div>
+    <div class="swiper-arrow arrow-left">&lt;</div>
+    <div class="swiper-arrow arrow-right">&gt;</div>
+    <div class="swiper-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="goods-title">爆款 · 纸韵匠心全系列</div>
+    <div class="goods-box">
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods1.jpg" alt="折枝梅衍纸胸针"></div>
+            <div class="goods-info">
+                <div class="goods-name">折枝梅衍纸胸针</div>
+                <div class="goods-price">¥23.00</div>
+                <button class="goods-btn" onclick="addCart('折枝梅衍纸胸针','23.00','goods1.jpg')">加入购物车</button>
+            </div>
+        </div>
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods2.jpg" alt="云叶衍纸发钗"></div>
+            <div class="goods-info">
+                <div class="goods-name">云叶衍纸单支发钗（汉服款）</div>
+                <div class="goods-price">¥33.00</div>
+                <button class="goods-btn" onclick="addCart('云叶衍纸单支发钗（汉服款）','33.00','goods2.jpg')">加入购物车</button>
+            </div>
+        </div>
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods5.jpg" alt="绾花衔耳衍饰套装"></div>
+            <div class="goods-info">
+                <div class="goods-name">绾花衔耳衍饰套装（耳环+发钗）</div>
+                <div class="goods-price">¥63.00</div>
+                <button class="goods-btn" onclick="addCart('绾花衔耳衍饰套装（耳环+发钗）','63.00','goods5.jpg')">加入购物车</button>
+            </div>
+        </div>
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods6.jpg" alt="云鬓花黄造型套"></div>
+            <div class="goods-info">
+                <div class="goods-name">云鬓花黄汉服衍纸定制造型套</div>
+                <div class="goods-price">¥240.60</div>
+                <button class="goods-btn" onclick="addCart('云鬓花黄汉服衍纸定制造型套','240.60','goods6.jpg')">加入购物车</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="taobao-footer">纸韵匠心文化创意工作室</div>
+
+<script>
+// 购物车
+const CART_KEY = "zhiyunjiangxin_cart";
+function addCart(name,price,img){
+    let cart=JSON.parse(localStorage.getItem(CART_KEY))||[];
+    let has=cart.find(item=>item.name===name);
+    if(has){
+        has.quantity+=1;
+    }else{
+        cart.push({name,price:parseFloat(price),img,quantity:1});
+    }
+    localStorage.setItem(CART_KEY,JSON.stringify(cart));
+    alert('加入购物车成功！');
+    location.href='zhiyun_cart.html';
+}
+
+// ========== 轮播JS ==========
+const wrap = document.querySelector('.swiper-wrap');
+const dots = document.querySelectorAll('.dot');
+const leftBtn = document.querySelector('.arrow-left');
+const rightBtn = document.querySelector('.arrow-right');
+let index = 0;
+const total = dots.length;
+let timer;
+
+function changeSlide(){
+    wrap.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(d=>d.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+function next(){
+    index = index >= total -1 ? 0 : index +1;
+    changeSlide();
+}
+function prev(){
+    index = index <=0 ? total -1 : index -1;
+    changeSlide();
+}
+// 自动5s切换
+function autoPlay(){
+    timer = setInterval(next,5000);
+}
+// 点击小圆点
+dots.forEach((dot,i)=>{
+    dot.onclick = ()=>{
+        index = i;
+        changeSlide();
+    }
+})
+rightBtn.onclick = next;
+leftBtn.onclick = prev;
+// 鼠标悬停停止自动轮播，移开继续
+document.querySelector('.taobao-swiper').onmouseenter = ()=>clearInterval(timer);
+document.querySelector('.taobao-swiper').onmouseleave = autoPlay;
+
+autoPlay();
+</script>
+
+</body>
+</html>

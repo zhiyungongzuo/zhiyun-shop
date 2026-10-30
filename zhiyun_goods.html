@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>全部商品 - 纸韵匠心文创店</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"微软雅黑","PingFang SC";}
+body{background:#F4F4F4;}
+.taobao-top{width:100%;height:40px;background:#FFF;line-height:40px;border-bottom:1px solid #EEE;}
+.top-content{width:1200px;margin:0 auto;font-size:12px;color:#666;}
+.taobao-banner{width:100%;height:120px;background:#FF4400;position:relative;}
+.shop-logo{position:absolute;left:30px;top:20px;width:80px;height:80px;border-radius:50%;overflow:hidden;background:#FFF;}
+.shop-name{position:absolute;left:130px;top:35px;color:#FFF;font-size:28px;font-weight:bold;}
+.shop-desc{position:absolute;left:130px;top:75px;color:#FFF;font-size:14px;}
+.taobao-nav{width:100%;height:50px;background:#333;}
+.nav-ul{list-style:none;display:flex;line-height:50px;width:1200px;margin:0 auto;}
+.nav-ul li{margin:0 25px;}
+.nav-ul li a{color:#FFF;text-decoration:none;font-size:16px;}
+.nav-ul li a:hover{color:#FFD100;}
+.container{width:1200px;margin:0 auto;background:#FFF;padding:20px;box-shadow:0 0 5px #EEE;}
+.goods-title{height:50px;line-height:50px;font-size:22px;font-weight:bold;color:#333;border-bottom:2px solid #FF4400;margin-bottom:20px;}
+.goods-box{display:flex;flex-wrap:wrap;gap:20px;}
+.goods-card{width:272px;border:1px solid #EEE;border-radius:4px;overflow:hidden;transition:0.3s;}
+.goods-card:hover{box-shadow:0 0 10px #CCC;transform:translateY(-3px);}
+.goods-pic{width:100%;height:272px;background:#F9F9F9;}
+.goods-pic img{width:100%;height:100%;object-fit:cover;}
+.goods-info{padding:10px;}
+.goods-name{font-size:14px;color:#333;height:40px;line-height:20px;overflow:hidden;margin-bottom:8px;}
+.goods-price{font-size:20px;color:#FF4400;font-weight:bold;margin-bottom:10px;}
+.goods-btn{width:100%;height:36px;background:#FF4400;color:#FFF;border:none;border-radius:4px;cursor:pointer;font-size:14px;}
+.goods-btn:hover{background:#E53E00;}
+.taobao-footer{width:100%;height:80px;background:#333;color:#FFF;text-align:center;line-height:80px;font-size:14px;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<div class="taobao-top">
+    <div class="top-content">淘宝 · 好物优选 · 纸韵匠心衍纸文创官方店</div>
+</div>
+
+<div class="taobao-banner">
+    <div class="shop-logo">
+        <img src="images/logo.jpg" width="80" height="80">
+    </div>
+    <div class="shop-name">纸韵匠心文创店</div>
+    <div class="shop-desc">手工衍纸饰品 | 汉服配饰DIY材料包</div>
+</div>
+
+<div class="taobao-nav">
+    <ul class="nav-ul">
+        <li><a href="zhiyun_index.html">首页</a></li>
+        <li><a href="zhiyun_goods.html">全部商品</a></li>
+        <li><a href="zhiyun_cart.html">购物车</a></li>
+        <li><a href="zhiyun_order.html">我的订单</a></li>
+        <li><a href="zhiyun_address.html">收货地址</a></li>
+        <li><a href="zhiyun_coupon.html">优惠券</a></li>
+        <li><a href="zhiyun_service.html">联系客服</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="goods-title">全部商品</div>
+    <div class="goods-box">
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods1.jpg" alt="折枝梅衍纸胸针"></div>
+            <div class="goods-info">
+                <div class="goods-name">折枝梅衍纸胸针</div>
+                <div class="goods-price">¥17.90</div>
+                <button class="goods-btn" onclick="addCart('折枝梅衍纸胸针','17.90','goods1.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods2.jpg" alt="云叶衍纸发钗"></div>
+            <div class="goods-info">
+                <div class="goods-name">云叶衍纸单支发钗（汉服款）</div>
+                <div class="goods-price">¥18.90</div>
+                <button class="goods-btn" onclick="addCart('云叶衍纸单支发钗（汉服款）','18.90','goods2.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods3.jpg" alt="素花简约衍纸耳饰"></div>
+            <div class="goods-info">
+                <div class="goods-name">素花简约衍纸耳饰（日常基础款）</div>
+                <div class="goods-price">¥12.90</div>
+                <button class="goods-btn" onclick="addCart('素花简约衍纸耳饰（日常基础款）','12.90','goods3.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods4.jpg" alt="花蔓衍纸耳饰"></div>
+            <div class="goods-info">
+                <div class="goods-name">花蔓衍纸单只耳饰（汉服精致款）</div>
+                <div class="goods-price">¥14.90</div>
+                <button class="goods-btn" onclick="addCart('花蔓衍纸单只耳饰（汉服精致款）','14.90','goods4.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods5.jpg" alt="绾花衔耳衍饰套装"></div>
+            <div class="goods-info">
+                <div class="goods-name">绾花衔耳衍饰套装（耳环+发钗）</div>
+                <div class="goods-price">¥16.90</div>
+                <button class="goods-btn" onclick="addCart('绾花衔耳衍饰套装（耳环+发钗）','16.90','goods5.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods6.jpg" alt="云鬓花黄造型套"></div>
+            <div class="goods-info">
+                <div class="goods-name">云鬓花黄汉服衍纸定制造型套</div>
+                <div class="goods-price">¥15.90</div>
+                <button class="goods-btn" onclick="addCart('云鬓花黄汉服衍纸定制造型套','15.90','goods6.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods7.jpg" alt="清韵入门DIY材料包"></div>
+            <div class="goods-info">
+                <div class="goods-name">清韵入门 DIY 衍纸书签材料包</div>
+                <div class="goods-price">¥19.90</div>
+                <button class="goods-btn" onclick="addCart('清韵入门 DIY 衍纸书签材料包','19.90','goods7.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+        <div class="goods-card">
+            <div class="goods-pic"><img src="images/goods8.jpg" alt="素云衍纸腰牌"></div>
+            <div class="goods-info">
+                <div class="goods-name">素云衍纸汉服小腰牌</div>
+                <div class="goods-price">¥21.90</div>
+                <button class="goods-btn" onclick="addCart('素云衍纸汉服小腰牌','21.90','goods8.jpg')">加入购物车</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="taobao-footer">纸韵匠心 2026 电商实训项目</div>
+
+<script>
+const CART_KEY = "zhiyunjiangxin_cart";
+
+function addCart(name,price,img){
+    let cart=JSON.parse(localStorage.getItem(CART_KEY))||[];
+    let has=cart.find(item=>item.name===name);
+    if(has){
+        has.quantity+=1;
+    }else{
+        cart.push({name,price:parseFloat(price),img,quantity:1});
+    }
+    localStorage.setItem(CART_KEY,JSON.stringify(cart));
+    alert('已加入购物车');
+    location.href='zhiyun_cart.html';
+}
+</script>
+
+</body>
+</html>
